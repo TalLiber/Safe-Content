@@ -13,25 +13,37 @@
 
 <body onload="onInitAdmin()">
     <h1>Admin Page</h1>
+
     <button class="return" onclick="location.href='index.html'">Return</button>
+
     <section class="users-sort">
         <select onchange="onSetSort(this.value)">
         <option value="name">Name</option>
         <option value="lastLogin">Last login</option>
       </select>
+        <button class="display-by-list" onclick="setUsersDisplay(stat='list')">
+        <i class="fa-solid fa-list"></i>
+      </button>
+        <button class="display-by-cards" onclick="setUsersDisplay(stat='cards')">
+        <i class="fa-brands fa-buromobelexperte"></i>
+      </button>
     </section>
-    <table>
-        <tbody class="table-body">
-            <!-- <tr class="headers">
+
+    <section class="list-display">
+        <table>
+            <tbody class="table-body">
+                <!-- <tr class="headers">
                 <td>userName</td>
                 <td>Password</td>
                 <td>LastLoginTime</td>
                 <td>IsAdmin</td>
             </tr> -->
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </section>
 
-    <!-- <i class="fa-solid fa-circle-user"></i> -->
+    <section class="card-display"></section>
+
     <script src="js/services/storage.service.js"></script>
     <script src="js/services/service.js"></script>
     <script src="js/adminController.js"></script>

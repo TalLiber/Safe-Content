@@ -20,7 +20,7 @@ function createUsers() {
     if (!users || !users.length) {
         users = [{
                 id: 'u101',
-                username: 'puki',
+                username: 'Puki',
                 password: 'secret',
                 lastLoginTime: 1601891998864,
                 isAdmin: false,
@@ -28,7 +28,7 @@ function createUsers() {
             },
             {
                 id: 'u102',
-                username: 'tal',
+                username: 'Tal',
                 password: '123',
                 lastLoginTime: 1601891998864,
                 isAdmin: true,
@@ -36,8 +36,24 @@ function createUsers() {
             },
             {
                 id: 'u103',
-                username: 'naama',
+                username: 'Naama',
                 password: 'zaq123',
+                lastLoginTime: 1601891998864,
+                isAdmin: false,
+                isLoggedIn: false
+            },
+            {
+                id: 'u104',
+                username: 'Shani',
+                password: '1234',
+                lastLoginTime: 1601891998864,
+                isAdmin: false,
+                isLoggedIn: false
+            },
+            {
+                id: 'u105',
+                username: 'Yarden',
+                password: '1234',
                 lastLoginTime: 1601891998864,
                 isAdmin: false,
                 isLoggedIn: false
