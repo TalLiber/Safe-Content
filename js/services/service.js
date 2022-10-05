@@ -2,7 +2,16 @@
 
 const STORAGE_KEY = 'ItemDB'
 var gUsers = []
+var gSortBy = ''
 
+function getUsersForDisplay() {
+    var users = gUsers
+
+    if (gSortBy === 'lastLogin') users.sort((a, b) => a.lastLoginTime - b.lastLoginTime)
+    else users.sort((a, b) => a.username.localeCompare(b.username))
+
+    return users
+}
 
 function createUsers() {
 
@@ -71,4 +80,12 @@ function checkLoggedIn() {
 function updateLastLoginTime(currUser) {
     currUser.lastLoginTime = Date.now()
     saveToStorage(STORAGE_KEY, gUsers)
+}
+
+function checkIfAdmin() {
+    if (!gUsers.find(user => user.isLoggedIn && user.isAdmin)) location.href = 'index.html'
+}
+
+function setSort(sortBy) {
+    gSortBy = sortBy
 }

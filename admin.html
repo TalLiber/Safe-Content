@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/adminstyle.css" />
+</head>
+
+<body onload="onInitAdmin()">
+    <h1>Admin Page</h1>
+    <button class="return" onclick="location.href='index.html'">Return</button>
+    <section class="users-sort">
+        <select onchange="onSetSort(this.value)">
+        <option value="name">Name</option>
+        <option value="lastLogin">Last login</option>
+      </select>
+    </section>
+    <table>
+        <tbody class="table-body">
+            <!-- <tr class="headers">
+                <td>userName</td>
+                <td>Password</td>
+                <td>LastLoginTime</td>
+                <td>IsAdmin</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/service.js"></script>
+    <script src="js/adminController.js"></script>
+</body>
+
+</html>
