@@ -1,7 +1,77 @@
+@font-face {
+    src: url(FredokaOne-Regular.ttf);
+    font-family: fredok;
+}
+
+* {
+    font-family: fredok;
+}
+
+body {
+    background-color: #ffc8dd;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    /* min-width: 350px; */
+    /* min-height: 450px; */
+    width: 400px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 38px;
+    background: #ffc8dd;
+    box-shadow: -44px 44px 88px #deaec0, 44px -44px 88px #ffe2fa;
+    text-align: center;
+    color: #b088c6;
+    text-shadow: 2px 1px 0px #cdb4db;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #a2d2ff00;
+    display: inline-block;
+    box-shadow: 0px 10px 14px -7px #276873;
+    margin: 3.5%;
+    width: 50%;
+    height: 5%;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+button {
+    background-color: #a2d2ff;
+    border-radius: 30px;
+    border: 1px solid #a2d2ff;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    margin: 5%;
+    box-shadow: 0px 10px 14px -7px #276873;
+}
+
+.sign-up {
+    position: absolute;
+    bottom: 10%;
+    text-shadow: none;
+    cursor: pointer;
+}
+
 .hide {
     display: none;
 }
 
 img {
     width: 10em;
+}
+
+.fa-solid {
+    color: lightcoral;
 }
