@@ -29,7 +29,7 @@ function createUsers() {
             {
                 id: 'u102',
                 username: 'tal',
-                password: 'qwe123',
+                password: '123',
                 lastLoginTime: 1601891998864,
                 isAdmin: true,
                 isLoggedIn: false

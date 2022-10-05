@@ -9,6 +9,9 @@
 
 body {
     background-color: #ffc8dd;
+    text-align: center;
+    color: #b088c6;
+    text-shadow: 2px 1px 0px #cdb4db;
 }
 
 .login-container {
@@ -26,9 +29,6 @@ body {
     border-radius: 38px;
     background: #ffc8dd;
     box-shadow: -44px 44px 88px #deaec0, 44px -44px 88px #ffe2fa;
-    text-align: center;
-    color: #b088c6;
-    text-shadow: 2px 1px 0px #cdb4db;
 }
 
 input {
@@ -74,4 +74,8 @@ img {
 
 .fa-solid {
     color: lightcoral;
+}
+
+.welcome-user {
+    font-size: 40px;
 }

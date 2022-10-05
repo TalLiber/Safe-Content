@@ -1,5 +1,65 @@
-table,
+@font-face {
+    src: url(FredokaOne-Regular.ttf);
+    font-family: fredok;
+}
+
+@font-face {
+    src: url(Heebo.ttf);
+    font-family: heebo;
+}
+
+@font-face {
+    src: url(Heebo-Bold.ttf);
+    font-family: heebo-bold;
+}
+
+body {
+    background-color: #ffc8dd;
+    text-align: center;
+    color: #b088c6;
+    font-family: heebo;
+}
+
+h1 {
+    font-family: fredok;
+    text-shadow: 2px 1px 0px #cdb4db;
+}
+
+button {
+    background-color: #a2d2ff;
+    border-radius: 30px;
+    border: 1px solid #a2d2ff;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    font-family: Heebo;
+    font-size: 15px;
+    padding: 7px 18px;
+    text-decoration: none;
+    margin: 5%;
+    box-shadow: 0px 10px 14px -7px #276873;
+}
+
+table {
+    margin: 20px;
+}
+
 td,
 tr {
-    border: 1px solid lightcoral;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 3px solid #ffafcc;
+}
+
+.headers {
+    font-family: Heebo-bold;
+}
+
+.users-sort select {
+    background-color: #cdb4db;
+    color: white;
+    font-family: Heebo;
+    border-radius: 5px;
+    border: 2px solid #ffafcc;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
